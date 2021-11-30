@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- local Styles -->
+        <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <!-- Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Weather App</title>
+</head>
+<body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+        <a class="navbar-brand" href="#">Weather App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0 ms-auto">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
+          </form>
+        </div>
+            </div>
+      </nav>
+      <!-- navigation end -->
+
+      <!-- search weather -->
+      <section>
+          <div class="container">
+            <form class="form-data row d-flex justify-content-center g-3 mt-3">
+                <p class="topic text-center">Get your weather data here...</p>
+                <div class="col-lg-auto col-md-auto col-sm-12 col-sx-12">
+                    <label for="inputPassword2" class="visually-hidden">Latitude</label>
+                    <input type="text" class="form-control" id="lat" placeholder="Latitude">
+                    </div>
+                <div class="col-lg-auto col-md-auto col-sm-12 col-sx-12">
+                    <label for="inputPassword2" class="visually-hidden">Longitude</label>
+                    <input type="text" class="form-control" id="lon" placeholder="Longitude">
+                </div>
+                <div class="col-lg-auto col-md-auto col-sm-12 col-sx-12">
+                    <button type="submit" class="btn btn-primary mb-3">Search</button>
+                </div>
+                </form>
+      </section>
+
+      <!-- colombo weather -->
+      <div class="container-fluid">
+          <div class="row weather_det">
+              <div class="col-4">
+                <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+                    <div class="row d-flex justify-content-center px-3">
+                        <div class="card">
+                            <h2 class="city px-5 mr-4 mt-3 mb-0"></h2>
+                            <div class="weather-cond">
+                            <p class="weather px-5 mr-4 mb-0 med-font"></p><img src="" alt="werather_icon" /></div>
+                            <h1 class="temp px-5 mr-4 large-font">&deg;C</h1>
+                            <p class="date px-5 ml-4 mb-4"></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+                    <div class="row d-flex justify-content-center px-3">
+                        <div class="card">
+                            <h2 class="city px-5 mr-4 mt-3 mb-0"></h2>
+                            <div class="weather-cond">
+                            <p class="weather px-5 mr-4 mb-0 med-font"></p><img src="" alt="werather_icon" /></div>
+                            <h1 class="temp px-5 mr-4 large-font">&deg;C</h1>
+                            <p class="date px-5 ml-4 mb-4"></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+                    <div class="row d-flex justify-content-center px-3">
+                        <div class="card">
+                            <h2 class="city px-5 mr-4 mt-3 mb-0"></h2>
+                            <div class="weather-cond">
+                            <p class="weather px-5 mr-4 mb-0 med-font"></p><img src="" alt="werather_icon" /></div>
+                            <h1 class="temp px-5 mr-4 large-font">&deg;C</h1>
+                            <p class="date px-5 ml-4 mb-4"></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- get weather det for mext 5 days -->
+      <section class="sub_weather">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        View More
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    </div>
+        </div>
+            <div class="collapse" id="collapseExample">
+                <div class="bottom-cards">
+                    <div class="row weather_det_more">
+                        <div class="col-6">
+                            <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+                                <div class="row d-flex justify-content-center px-3">
+                                    <div class="card">
+                                        <h2 class="city px-5 mr-4 mt-3 mb-0"></h2>
+                                        <div class="weather-cond">
+                                        <p class="weather px-5 mr-4 mb-0 med-font"></p><img src="" alt="werather_icon" /></div>
+                                        <h1 class="temp px-5 mr-4 large-font">&deg;C</h1>
+                                        <p class="date px-5 ml-4 mb-4"></p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+                                <div class="row d-flex justify-content-center px-3">
+                                    <div class="card">
+                                        <h2 class="city px-5 mr-4 mt-3 mb-0"></h2>
+                                        <div class="weather-cond">
+                                        <p class="weather px-5 mr-4 mb-0 med-font"></p><img src="" alt="werather_icon" /></div>
+                                        <h1 class="temp px-5 mr-4 large-font">&deg;C</h1>
+                                        <p class="date px-5 ml-4 mb-4"></p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="request.js"></script>
+    <!-- Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
