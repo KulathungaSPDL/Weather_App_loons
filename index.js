@@ -24,24 +24,7 @@ window.onload = function() {
         .catch((error) => { console.log(error) });
   };
 
-// document.getElementById("btn").onclick = function() {
 
-//     e.preventDefault();
-//     const coordinates = cords.value.trim();
-//     console.log(coordinates);
-//     searchForm.reset();
-
-//     const lat = splitCoordinate(coordinates)[0];
-//     const lon = splitCoordinate(coordinates)[1];
-//     console.log("coordinates", lat, lon);
-
-//     //Making request
-//     requestCoordinates(lat, lon)
-//         .then((data) => {
-//             updateWeather(data);
-//         })
-//         .catch((error) => { console.log(error) });
-// }; 
 
 // Add an event to the listner 
 searchForm.addEventListener('submit', e => {
