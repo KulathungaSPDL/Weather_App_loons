@@ -9,10 +9,8 @@ var arr2 = [];
 
 window.onload = function() {
    
-    
     requestCoordinates(6.9271, 79.8612)
         .then((data) => {
-        
             
             for (var prop in data) {
                 arr.push(data[prop]);
@@ -23,8 +21,6 @@ window.onload = function() {
         })
         .catch((error) => { console.log(error) });
   };
-
-
 
 // Add an event to the listner 
 searchForm.addEventListener('submit', e => {
